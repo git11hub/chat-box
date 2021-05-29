@@ -6,6 +6,7 @@ import { useHistory, useLocation } from 'react-router';
 import firebaseConfig from './firebase.config';
 import firebase from "firebase/app";
 import "firebase/auth";
+import "./Login.css";
 
 const Login = () => {
 
@@ -40,8 +41,9 @@ const Login = () => {
     }
 
     return (
-        <Container>
-            <h3>this is login page...</h3>
+        <Container className="login">
+            <img src="https://images-eu.ssl-images-amazon.com/images/I/41Ac16Tk8IL.png" alt="chat image" />
+            {/* <h3>this is login page...</h3> */}
             <button className="btn btn-danger" onClick={handleGoogleSignIn}>Google Sign In</button>
         </Container>
     );
